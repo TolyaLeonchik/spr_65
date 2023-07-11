@@ -1,4 +1,4 @@
-package com.tms;
+package com.tms.model;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
