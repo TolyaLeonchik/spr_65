@@ -12,15 +12,14 @@ public class HelloController {
 //    @PutMapping
 //    @DeleteMapping
 
-//    @GetMapping("/hello/{number}")  /** для @PathVariable*/
-    @GetMapping("/hello")  /** для @RequestParam*/
+
+    //    @GetMapping("/hello/{number}")  /** для @PathVariable*/
+    @GetMapping("/hello")       /** для @RequestParam*/
 //    @RequestMapping(value = "/hello", method = RequestMethod.GET)       //тоже самое что и прошлый (прошлый лучше)
-    //public String getHelloPage(@PathVariable int number) {      /** как getParametr*/
+//public String getHelloPage(@PathVariable int number) {      /** как getParametr*/
     public String getHelloPage(@RequestParam("number") int number) {      /** как getParametr*/
         System.out.println(number);
         //logic(Service -> Repository)
-        return "HelloMVC";      //  /main-path/hello
+        return "HelloMVC";      //  /main-path/hello      //проверить домашку чтобы здесь возращался в имя "Другое", и проверить можно ли оттуда перейти на джава стр
     }
-
-
 }
